@@ -1,0 +1,19 @@
+<script>
+  //task1
+  const str1 = "She says 'you aren't right'. He told 'I was over there'.  They say 'Never behave yourself like this'.";
+  const regexpr1 = /'/g;
+  result = str1.replace(regexpr1, '"');
+  console.log(result);
+
+  //task2
+  const str2 = "She says 'you aren't right'. He told 'I was over there'.  They say 'Never behave yourself like this'.";
+  const regexpr2 = /(?<=\W)'|'(?=\W)/g;
+  result = str2.replace(regexpr2, '"');
+  console.log(result);
+ 
+  //task3
+  const re_name = /\w+/;
+  const re_phone = /\+7\(\d{3}\)\d{3}-\d{4}/;
+  const re_mail = /my[\.-]?(mail)@\1.ru/;
+  
+</script>
