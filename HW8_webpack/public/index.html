@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+    <title>Shop Homepage</title>
+  
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c190c00941.js" crossorigin="anonymous"></script>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+  
+  </head>
+  
+  <body>
+  <div id="app">
+  
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">JavaScript | E-commerce</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="nav-item dropdown">
+          <a style="margin-left: 5px;  text-decoration:none; font-size: 18px;"
+              class="navbar-link text-light dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+              role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Категории
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+               <a class="dropdown-item" href="#">Ноутбуки</a>
+               <a class="dropdown-item" href="#">Смартфоны</a>
+               <a class="dropdown-item" href="#">Планшеты</a>
+          </div>
+        </div>
+        <div class="navbar-item ">
+            <a class="nav-link text-llight"  href="#">Авторизация</a>
+        </div>
+        <div class="navbar-item ">
+            <a class="nav-link text-llight"  href="#">Регистрация</a>
+        </div>
+    
+        <div class="navbar-nav ml-auto nav-item cart">
+            <search></search>
+            <cart ref="cart"></cart>
+        </div>
+      </div>
+    </nav>
+  <!-- End Navigation -->
+  
+    <!-- Page Content -->
+    <div class="container">
+  
+      <div class="row">
+    
+        <div class="col-lg-3 mt-3">
+          <div class="logo">
+            <img src="img/logo.png" alt="LOGO">
+<!--            <h4 class="my-4">NodeJS</h4>-->
+          </div>
+          <div class="list-group">
+            <a href="#" class="list-group-item">Смартфоны</a>
+            <a href="#" class="list-group-item">Ноутбуки</a>
+            <a href="#" class="list-group-item">Планшеты</a>
+          </div>
+        </div>
+        <!-- /.col-lg-3 -->
+  
+      
+        <div class="col-lg-9">
+        
+  <!--          CAROUSEL-->
+    
+          <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <img class="d-block img-fluid" src="img/1.jpeg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="img/2.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="img/3.jpg" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+  
+  <!--          END CAROUSEL-->
+  
+          <main>
+            <error ref="error"></error>
+            <products ref="products"></products>
+          </main>
+
+        </div>
+        <!-- /.col-lg-9 -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!--End of id=app-->
+  
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+      </div>
+  </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="../dist/index.js"></script>
+  </body>
+
+</html>
